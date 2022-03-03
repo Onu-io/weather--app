@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <title>Current-Weather</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <style>
+        body {
+            background: url(images/bg-image.jpg) no-repeat;
+            background-size: cover;
+            height: 100vh;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="col-md-6 m-auto py-5">
+            <div class="input-group mb-3">
+                <input type="text" id="city-name" class="form-control" placeholder="Enter a location for Weather ...">
+                <div class="input-group-append">
+                    <button onclick="searchTemp()" type="button" class="btn btn-danger">Search</button>
+                </div>
+            </div>
+        </div>
+
+
+        <div id="main-container"></div>
+
+
+
+        <div class="weather-status text-white text-center">
+            <img id="weather-icon" src="https://openweathermap.org/img/wn/02d@2x.png" alt="">
+            <h1 id="condition" class=""></h1>
+            
+            <h1 id="city"></h1>
+            <h3><span id="temp"></span>&deg;</h3>
+            
+        </div>
+
+        <div class="container text-white mx-auto mt-5 text-center">
+            <h3>Feels like : <span id="feelslike"></span>&deg;C</h3>
+            <h3>Lowest : <span id="lowest"></span>&deg;C</h3>
+            <h3>Max : <span id="max"></span>&deg;C</h3>
+            
+        </div>
+        <div class="container text-white mx-auto mt-5 text-center">
+            <h4>wind - deg : <span id="wind"></span>&deg;</h4>
+            <h4>wind - speed : <span id="wind-speed"></span>mph</h4>
+            <h4>Wind-pressure : <span id="wind-pressure"></span></h4>
+        </div>
+    </div>
+
+
+
+
+
+
+
+    <script src="js/app.js"></script>
+</body>
+
+</html>
